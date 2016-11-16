@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <stroke android:color="@color/color_local_device_bar" android:dashWidth="1dp"></stroke>
+    <solid android:color="#fff4ef"></solid>
+    <corners android:radius="10dp"></corners>
+</shape>

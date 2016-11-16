@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_share"
+        android:title="分享"
+        android:icon="@drawable/share_unselected"
+        app:showAsAction="ifRoom">
+        <menu>
+            <group>
+                <item
+                    android:id="@+id/action_share1"
+                    android:title="分享1"
+                    android:orderInCategory="50"
+                    android:icon="@drawable/share_unselected"
+                    app:showAsAction="ifRoom"></item>
+                <item
+                    android:id="@+id/action_share2"
+                    android:title="分享2"
+                    android:orderInCategory="60"
+                    android:icon="@drawable/share_unselected"
+                    app:showAsAction="ifRoom"></item>
+                <item
+                    android:id="@+id/action_share3"
+                    android:title="分享3"
+                    android:orderInCategory="80"
+                    android:icon="@drawable/share_unselected"
+                    app:showAsAction="always"></item>
+            </group>
+        </menu>
+    </item>
+</menu>
