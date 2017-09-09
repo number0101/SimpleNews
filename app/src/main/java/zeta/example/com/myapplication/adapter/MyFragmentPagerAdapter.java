@@ -20,13 +20,13 @@ public class MyFragmentPagerAdapter extends FragmentPagerAdapter {
         super(fm);
         this.mFragments = fragments;
         this.tabinfos = tabinfos;
-        Log.e("lifeprocess","***************MyFragmentPagerAdapter");
+//        Log.e("lifeprocess","***************MyFragmentPagerAdapter");
 
     }
 
     @Override
     public CharSequence getPageTitle(int position) {
-        Log.e("lifeprocess","***************getPageTitle");
+//        Log.e("lifeprocess","***************getPageTitle");
 
         return tabinfos.get(position%tabinfos.size());
 
@@ -36,7 +36,7 @@ public class MyFragmentPagerAdapter extends FragmentPagerAdapter {
     public Fragment getItem(int position) {
         Fragment fragment = mFragments.get(position);
 //        tagPosition.getPosition(position);
-        Log.e("lifeprocess","***************getItem");
+//        Log.e("lifeprocess","***************getItem");
         return fragment;
     }
 

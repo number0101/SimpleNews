@@ -1,14 +1,4 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">网易新闻</string>
 
-    <string name="json1">
-        { "phone":["12345678","87654321","110"],
-        "name":"张杰", "age":33,
-        "address":{"country":"中国","province":"四川"},
-        "married":"true" }
-    </string> <string name="json2">
-        [ {"name":"谢娜","age":20,"sex":"male"},
-        {"name":"唐嫣","age":21},
-        {"name":"天使宝宝","age":18},
-        {"name":"掏粪男孩","age":28} ] </string>
 </resources>

@@ -40,7 +40,6 @@ import zeta.example.com.myapplication.Util.DividerItemDecoration;
 import zeta.example.com.myapplication.activity.Show;
 import zeta.example.com.myapplication.adapter.NewsAdapter;
 import zeta.example.com.myapplication.entity.NewsItem;
-import zeta.example.com.myapplication.myInterface.FragmentCreated;
 import zeta.example.com.myapplication.tools.Contans;
 import zeta.example.com.myapplication.tools.Url;
 
@@ -68,7 +67,7 @@ public class ConFragmentA extends Fragment{
 
 
 
-        Log.e("lifeprocess","-----------2---------onCreate");
+//        Log.e("lifeprocess","-----------2---------onCreate");
     }
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -78,7 +77,7 @@ public class ConFragmentA extends Fragment{
         recyclerView = (RecyclerView) view.findViewById(R.id.recycview);
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
         recyclerView.addItemDecoration(new DividerItemDecoration(getActivity(),DividerItemDecoration.VERTICAL_LIST));
-        Log.e("lifeprocess","--------3-----------onCreateView");
+//        Log.e("lifeprocess","--------3-----------onCreateView");
         return view;
 
     }
@@ -90,7 +89,7 @@ public class ConFragmentA extends Fragment{
 
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
-        Log.e("lifeprocess","---------4----------onActivityCreated");
+//        Log.e("lifeprocess","---------4----------onActivityCreated");
         super.onActivityCreated(savedInstanceState);
 
         volleyGetJson(0);
@@ -171,62 +170,62 @@ public class ConFragmentA extends Fragment{
 
 
 
-    public void onAttach(Context activity) {
-        super.onAttach(activity);
-//        Log.e("lifeprocess","nnnnnnnnnnnum" + num);
-//        try
-//        {
-//            fragmentCreated = (FragmentCreated) activity;
-//            Log.e("interfacecreated","已经继承接口" );
-//        }catch (Exception e)
-//        {
-//            throw new ClassCastException(activity.toString()+
-//                    "必须继承接口");
-//        }
-        Log.e("lifeprocess","----------1---------onAttach");
-    }
-
-
-    public void onStart() {
-        super.onStart();
-        Log.e("lifeprocess","-----------5---------onStart");
-    }
-
-
-    @Override
-    public void onResume() {
-        super.onResume();
-//        textView.setText("i = "+i);
-        Log.e("lifeprocess","---------6---------onResume");
-    }
-
-    @Override
-    public void onPause() {
-        super.onPause();
-        Log.e("lifeprocess","----------7---------onPause");
-    }
-
-    @Override
-    public void onStop() {
-        super.onStop();
-        Log.e("lifeprocess","----------8--------onStop");
-    }
-
-    @Override
-    public void onDestroyView() {
-        super.onDestroyView();
-        Log.e("lifeprocess","----------9--------onDestroyView");
-    }
-
-    @Override
-    public void onDestroy() {
-        super.onDestroy();
-        Log.e("lifeprocess","--------10---------onDestroy");
-    }
-
-    @Override
-    public void onDetach() {
-        super.onDetach();
-        Log.e("lifeprocess","--------11:kill---------onDetach");
-    }
+//    public void onAttach(Context activity) {
+//        super.onAttach(activity);
+////        Log.e("lifeprocess","nnnnnnnnnnnum" + num);
+////        try
+////        {
+////            fragmentCreated = (FragmentCreated) activity;
+////            Log.e("interfacecreated","已经继承接口" );
+////        }catch (Exception e)
+////        {
+////            throw new ClassCastException(activity.toString()+
+////                    "必须继承接口");
+////        }
+//        Log.e("lifeprocess","----------1---------onAttach");
+//    }
+//
+//
+//    public void onStart() {
+//        super.onStart();
+//        Log.e("lifeprocess","-----------5---------onStart");
+//    }
+//
+//
+//    @Override
+//    public void onResume() {
+//        super.onResume();
+////        textView.setText("i = "+i);
+//        Log.e("lifeprocess","---------6---------onResume");
+//    }
+//
+//    @Override
+//    public void onPause() {
+//        super.onPause();
+//        Log.e("lifeprocess","----------7---------onPause");
+//    }
+//
+//    @Override
+//    public void onStop() {
+//        super.onStop();
+//        Log.e("lifeprocess","----------8--------onStop");
+//    }
+//
+//    @Override
+//    public void onDestroyView() {
+//        super.onDestroyView();
+//        Log.e("lifeprocess","----------9--------onDestroyView");
+//    }
+//
+//    @Override
+//    public void onDestroy() {
+//        super.onDestroy();
+//        Log.e("lifeprocess","--------10---------onDestroy");
+//    }
+//
+//    @Override
+//    public void onDetach() {
+//        super.onDetach();
+//        Log.e("lifeprocess","--------11:kill---------onDetach");
+//    }
 }

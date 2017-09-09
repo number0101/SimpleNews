@@ -3,6 +3,7 @@ package zeta.example.com.myapplication.activity;
 import android.content.Intent;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -40,7 +41,11 @@ public class MainActivity extends AppCompatActivity {
         initData();
     }
 
-
+    @Override
+    protected void onStop() {
+        super.onStop();
+        fragments.clear();
+    }
 
     private void initview() {
         toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -82,7 +87,7 @@ public class MainActivity extends AppCompatActivity {
             childfrag.setArguments(bundle);
             fragments.add(childfrag);
         }
-        Log.e("tabinfos","tabLayout3"+tabLayout.getTabCount());
+        Log.e("tabinfos","tabLayout3 "+tabLayout.getTabCount());
         Log.e("tabinfos","before set adapter"+tabinfos);
         MyFragmentPagerAdapter fragAdapter = new MyFragmentPagerAdapter(getSupportFragmentManager(), fragments,tabinfos);
         viewPager.setAdapter(fragAdapter);

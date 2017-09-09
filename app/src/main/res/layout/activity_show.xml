@@ -11,7 +11,7 @@
         android:id="@+id/tb"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:background="#28cf19"
+        android:background="@color/red_dark"
         app:titleTextColor="#ffffff"
         app:titleMarginStart="50dp"
         ></android.support.v7.widget.Toolbar>

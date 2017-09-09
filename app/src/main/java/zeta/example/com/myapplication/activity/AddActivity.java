@@ -43,17 +43,6 @@ public class AddActivity extends AppCompatActivity {
 
     }
 
-    @Override
-    protected void onStop() {
-        super.onStop();
-        Log.e("tabinfos","stop");
-    }
-
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        Log.e("tabinfos","destroy");
-    }
 
     private void initData(){
         tabinfos2 = new ArrayList<>();
@@ -61,6 +50,7 @@ public class AddActivity extends AppCompatActivity {
         tabinfos2.add("手机");
         tabinfos2.add("汽车");
         tabinfos2.add("暴雪");
+
         Intent intent = getIntent();
         tabinfos1 = (ArrayList<String>) intent.getSerializableExtra("tabinfos");
         Log.e("tabinfos","add get"+tabinfos1+"");
